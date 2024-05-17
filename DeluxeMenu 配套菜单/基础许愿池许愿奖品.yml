@@ -1,0 +1,115 @@
+open_command: 基础许愿池许愿奖品
+
+size: 27
+
+menu_title: '奖品浏览'
+
+items:
+  '填充玻璃':
+    material: GRAY_STAINED_GLASS_PANE
+    data: 0
+    slots:
+      - 0-26
+    display_name: " "
+
+  '钻石':
+    material: DIAMOND
+    amount: 5
+    data: 0
+    slot: 10
+    display_name: "&b钻石"
+    lore:
+      - " "
+      - "&7来自: &b基础许愿池"
+      - " "
+      - "&7数量: &e5 个"
+      - " "
+      - "&7概率: &a5/100"
+      - " "
+      - "&7增加保底率: &d0.0"
+      - "&7是否清空保底率: &c清空"
+      - " "
+      - "&7您的保底率: &6%aw_guaranteed_基础许愿池%"
+      - "&7您的许愿次数: &6%aw_amount_基础许愿池%"
+      - " "
+      - "&7此物品的保底率: &c等于 30.0"
+      - " "
+      - "&7点击返回基础许愿池!"
+      - " "
+
+    left_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 许愿池"
+
+    right_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 许愿池"
+
+  '铁锭':
+    material: IRON_INGOT
+    amount: 10
+    data: 0
+    slot: 13
+    display_name: "&b铁锭"
+    lore:
+      - " "
+      - "&7来自: &b基础许愿池"
+      - " "
+      - "&7数量: &e10 个"
+      - " "
+      - "&7概率: &a20/100"
+      - " "
+      - "&7增加保底率: &d1.0"
+      - "&7是否清空保底率: &a不清空"
+      - " "
+      - "&7您的保底率: &6%aw_guaranteed_基础许愿池%"
+      - "&7您的许愿次数: &6%aw_amount_基础许愿池%"
+      - " "
+      - "&7此物品的保底率: &c等于 15.0"
+      - " "
+      - "&7点击返回基础许愿池!"
+      - " "
+
+    left_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 许愿池"
+
+    right_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 许愿池"
+
+  '金币':
+    material: GOLD_NUGGET
+    amount: 50
+    data: 0
+    slot: 16
+    display_name: "&b金币"
+    lore:
+      - " "
+      - "&7来自: &b基础许愿池"
+      - " "
+      - "&7数量: &e50 个"
+      - " "
+      - "&7概率: &a75/100"
+      - " "
+      - "&7增加保底率: &d1.0"
+      - "&7是否清空保底率: &a不清空"
+      - " "
+      - "&7您的保底率: &6%aw_guaranteed_基础许愿池%"
+      - "&7您的许愿次数: &6%aw_amount_基础许愿池%"
+      - " "
+      - "&7此物品的保底率: &c暂无"
+      - " "
+      - "&7点击返回基础许愿池!"
+      - " "
+
+    left_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 许愿池"
+
+    right_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 许愿池"
+
+
+sweet: true

@@ -1,0 +1,54 @@
+open_command: 许愿池
+
+size: 27
+
+menu_title: '许愿池'
+
+items:
+  '填充玻璃':
+    material: GRAY_STAINED_GLASS_PANE
+    data: 0
+    slots:
+      - 0-26
+    display_name: " "
+
+  '敬请期待':
+    material: BLACK_STAINED_GLASS_PANE
+    data: 0
+    slots:
+      - 12
+      - 14
+      - 16
+    display_name: "&8敬请期待"
+
+  '基础许愿池':
+    material: SPYGLASS
+    data: 0
+    slot: 10
+    display_name: "&b基础许愿池"
+    lore:
+      - " "
+      - "&7名称: &b基础许愿池"
+      - " "
+      - "&7要求:"
+      - " &8您的等级必须达到 10 级以上"
+      - " "
+      - "&7消耗: &e您可以在配置文件规定"
+      - " "
+      - "&7您的保底率: &6%aw_guaranteed_基础许愿池%"
+      - "&7您的许愿次数: &6%aw_amount_基础许愿池%"
+      - " "
+      - "&7左键进行一次许愿!"
+      - "&7右键查看所有许愿奖品!"
+      - " "
+
+    left_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[player] aw makewish 基础许愿池"
+      - "[close]"
+
+    right_click_commands:
+      - "[sound] UI_BUTTON_CLICK"
+      - "[openguimenu] 基础许愿池许愿奖品"
+
+sweet: true

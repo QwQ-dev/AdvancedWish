@@ -1,0 +1,113 @@
+# 配置版本 请不要擅自更改，插件将在启动时检查配置文件版本，并告诉您您是否应该重新生成来防止错误。
+CONFIG-VERSION: 69
+
+# 自动重载: 这里的一切配置都是可以被自动重载的，这意味这您只需要保存，而不需要重载插件! 保存即刻应用!
+ADMIN-SHOW-COMMAND:
+  - "<CHAT_BAR>"
+  - "&6&lAdvanced Wish &8- &7版本: <version> &8- &f管理员指令帮助"
+  - "<CHAT_BAR>"
+  - "&e • &6/aw list &7- &7&o查看许愿池列表."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw makeWish <许愿池> <可选 - 指定玩家> <可选 - 是否强制许愿> &7- &7&o对规定的许愿池进行许愿."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw amount <许愿池> <可选 - 指定玩家> &7- &7&o获取指定许愿池的许愿次数."
+  - "&e • &6/aw guaranteed <许愿池> <可选 - 指定玩家> &7- &7&o获取指定许愿池的保底率."
+  - "&e • &6/aw limitAmount <许愿池> <可选 - 指定玩家> &7- &7&o获取指定许愿池的限制许愿次数."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw setAmount <许愿池> <玩家> <次数> &7- &7&o设置指定玩家指定许愿池的许愿次数."
+  - "&e • &6/aw setGuaranteed <许愿池> <玩家> <保底率> &7- &7&o设置指定玩家指定许愿池的保底率."
+  - "&e • &6/aw setLimitAmount <许愿池> <玩家> <次数> &7- &7&o设置指定玩家指定许愿池的限制许愿次数."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw addAmount <许愿池> <玩家> <添加次数> &7- &7&o添加指定玩家指定许愿池的许愿次数."
+  - "&e • &6/aw addGuaranteed <许愿池> <玩家> <添加保底率> &7- &7&o添加指定玩家指定许愿池的保底率."
+  - "&e • &6/aw addLimitAmount <许愿池> <玩家> <添加次数> &7- &7&o添加指定玩家指定许愿池的限制许愿次数."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw resetLimitAmount <许愿池> &7- &7&o重置所有玩家指定许愿池的限制许愿次数."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw queryLogs <玩家> <开始条数> <结束条数> &7- &7&o查询指定玩家的指定条数日志."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw reload &7- &7&o重载插件."
+  - "<CHAT_BAR>"
+
+DEFAULT-SHOW-COMMAND:
+  - "<CHAT_BAR>"
+  - "&6&lAdvanced Wish &8- &7版本: <version> &8- &f指令帮助"
+  - "<CHAT_BAR>"
+  - "&e • &6/aw list &7- &7&o查看许愿池列表."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw makeWish <许愿池> &7- &7&o对规定的许愿池进行许愿."
+  - "<CHAT_BAR>"
+  - "&e • &6/aw amount <许愿池> &7- &7&o获取指定许愿池的许愿次数."
+  - "&e • &6/aw guaranteed <许愿池> &7- &7&o获取指定许愿池的保底率."
+  - "&e • &6/aw limitAmount <许愿池> &7- &7&o获取指定许愿池的限制许愿次数."
+  - "<CHAT_BAR>"
+
+LIST:
+  - "<CHAT_BAR>"
+  - "&e • &6目前已加载的许愿池有: <wishlist>"
+  - "<CHAT_BAR>"
+
+NO-PERM:
+  - "&c指令错误! 您没有权限使用此指令! 请输入 /aw help 查看帮助。"
+
+COMMAND-ERROR:
+  - "&c指令错误! 请输入 /aw help 查看帮助。"
+
+WISH-NULL:
+  - "&c您必须要规定一个许愿池才可以!"
+
+PLAYER-NULL:
+  - "&c您必须要规定一个玩家才可以!"
+
+PLAYER-OFFLINE:
+  - "&c此玩家不在线!"
+
+WISH-NOT-HAVE:
+  - "&c此许愿池不存在!"
+
+DONE:
+  - "&a完成!"
+
+MUST-NUMBER:
+  - "&c您传入的参数必须是一个数字! 请检查!"
+
+WISH-NOT-ENABLED-LIMIT:
+  - "&c您无法进行此操作, 此许愿池并没有许愿次数限制!"
+
+QUERY-WISH:
+  PREFIX:
+    - "<CHAT_BAR>"
+    - "&6&lAdvanced Wish &8- &7版本: <version> &8- &f抽奖查询"
+    - "<CHAT_BAR>"
+
+  QUERY:
+    - "&e • &6<targetPlayer> (<targetPlayerUUID>) &7在 &e<time> &7执行了任务, 文件名/许愿池名为: &e<file>&7, 执行节点为: &e<node>&7."
+
+  SUFFIX:
+    - "<CHAT_BAR>"
+    - "&e • &7查询完成, 此次查询日志条数: &e<size> &7条! 此玩家日志总条数: &e<allSize> &7条!"
+    - "<CHAT_BAR>"
+
+  START-NUMBER-NULL:
+    - "&c您必须要规定开始条数才可以!"
+
+  END-NUMBER-NULL:
+    - "&c您必须要规定结束条数才可以!"
+
+  QUERY-NOT-ENABLED:
+    - "&c您无法进行此操作, 此许愿池并没有开启日志记录选项!"
+
+  LOGS-NULL:
+    - "&c没有查询到对应的日志记录, 此玩家没有抽奖? 开始条数或结束条数填写错误?"
+
+GET-AMOUNT:
+  - "&a<player> 的<wish>抽奖次数为: <amount>"
+
+GET-GUARANTEED:
+  - "&a<player> 的<wish>保底率为: <guaranteed>"
+
+GET-LIMIT-AMOUNT:
+  - "&a<player> 的<wish>抽奖限制次数为: <playerLimitAmount>/<limitAmount>"
+
+HELP:
+  - "&c请输入 /<commandName> help 查看帮助。"
