@@ -118,20 +118,4 @@ public class PlayerListener implements Listener {
 
         if (!command.equals(getCommand)) event.setCancelled(true);
     }
-
-    @EventHandler
-    public void onPlayerInteractEntity(PlayerInteractEntityEvent event) {
-        if (event.getRightClicked().getType() == EntityType.VILLAGER) {
-            Villager villager = (Villager) event.getRightClicked();
-
-            // 获取第一个交易项
-            MerchantRecipe firstTrade = villager.getRecipes().get(0);
-
-            // 修改交易项的最大使用次数
-            firstTrade.setMaxUses(3);  // 设置最大使用次数为3次
-
-            // 更新交易项
-            villager.setRecipes(villager.getRecipes());
-        }
-    }
 }
